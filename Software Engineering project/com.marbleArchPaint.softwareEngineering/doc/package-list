@@ -1,0 +1,9 @@
+com.marbleArchPaint.softwareEngineering
+com.marbleArchPaint.softwareEngineering.LabelProvider
+com.marbleArchPaint.softwareEngineering.dialogs
+com.marbleArchPaint.softwareEngineering.interfaces
+com.marbleArchPaint.softwareEngineering.listComparators
+com.marbleArchPaint.softwareEngineering.supporter
+com.marbleArchPaint.softwareEngineering.views
+com.marbleArchPaint.softwareEngineering.views.activities
+org.eclipse.wb.swt

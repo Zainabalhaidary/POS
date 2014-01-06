@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.marbleArchPaint.databaseModel/src" editDirectory="/com.marbleArchPaint.databaseModel.edit/src"
+    editorDirectory="/com.marbleArchPaint.databaseModel.editor/src" modelPluginID="com.amenity.model"
+    modelName="General" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false" editPluginID="com.marbleArchPaint.databaseModel.edit"
+    editorPluginID="com.marbleArchPaint.databaseModel.editor" testsPluginID="com.marbleArchPaint.databaseModel.tests"
+    runtimeVersion="2.8" runtimePlatform="RCP">
+  <foreignModel>General.ecore</foreignModel>
+  <genPackages prefix="General" disposableProviderFactory="true" ecorePackage="General.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="General.ecore#//PaymentType">
+      <genEnumLiterals ecoreEnumLiteral="General.ecore#//PaymentType/Cash"/>
+      <genEnumLiterals ecoreEnumLiteral="General.ecore#//PaymentType/CreditCard"/>
+      <genEnumLiterals ecoreEnumLiteral="General.ecore#//PaymentType/Check"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="General.ecore#//Date"/>
+    <genDataTypes ecoreDataType="General.ecore#//Image"/>
+    <genClasses ecoreClass="General.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/userId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/password"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/lastUsed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/timesUsed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//User/deleted"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//SessionSatus">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//SessionSatus/mksStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//SessionSatus/dbStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//SessionSatus/synergySession"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Customer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/CustomerId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/firstName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/lastName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/shippingAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/billingAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/phone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Customer/email"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Order">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/orderId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//Order/shipperId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//Order/customerId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/orderDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/tax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/completed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/deleted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/paid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/paymentDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/payType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//Order/salesPerson"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/onHold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/totalDiscount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Order/totalPrice"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Shipper">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Shipper/shipperId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Shipper/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Shipper/phone"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Payment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Payment/paymentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Payment/paymentType"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//OrderDetails">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/orderDetailId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//OrderDetails/orderId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//OrderDetails/productId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/Quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/Discount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/Total"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//OrderDetails/date"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Product">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/productId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/SKU"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//Product/supplierId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference General.ecore#//Product/catergoryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/productName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/QuantityPerUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/unitPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/discount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/UnitsInStock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/TotalQuantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Product/Image"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Supplier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Supplier/supplierId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Supplier/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Supplier/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Supplier/phone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Supplier/email"/>
+    </genClasses>
+    <genClasses ecoreClass="General.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Category/categoryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Category/categoryName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute General.ecore#//Category/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

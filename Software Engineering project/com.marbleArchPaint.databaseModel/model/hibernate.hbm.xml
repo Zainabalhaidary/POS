@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false">
+	<typedef name="general.Image" class="org.eclipse.emf.teneo.hibernate.mapping.DefaultToStringUserType">
+		<param name="epackage">http://general/1.0</param>
+		<param name="edatatype">Image</param>
+	</typedef>
+	<class name="general.impl.UserImpl" entity-name="User" abstract="false" lazy="false" discriminator-value="User" table="`user`">
+		<meta attribute="eclassName" inherit="false">User</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="userId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`userid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="userdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="username" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`username`"/>
+		</property>
+		<property name="password" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`password`"/>
+		</property>
+		<property name="email" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`email`"/>
+		</property>
+		<property name="lastUsed" lazy="false" insert="true" update="true" not-null="true" unique="false" type="timestamp">
+			<column not-null="true" unique="false" name="`lastused`"/>
+		</property>
+		<property name="timesUsed" lazy="false" insert="true" update="true" not-null="false" unique="false" type="int">
+			<column not-null="false" unique="false" name="`timesused`"/>
+		</property>
+		<property name="deleted" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`deleted`"/>
+		</property>
+	</class>
+	<class name="general.impl.SessionSatusImpl" entity-name="SessionSatus" abstract="false" lazy="false" discriminator-value="SessionSatus" table="`sessionsatus`">
+		<meta attribute="eclassName" inherit="false">SessionSatus</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id type="long" name="e_id" column="e_id" access="org.eclipse.emf.teneo.hibernate.mapping.identifier.IdentifierPropertyHandler">
+			<meta attribute="syntheticId" inherit="false">true</meta>
+			<generator class="native"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="sessionsatusdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="mksStatus" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`mksstatus`"/>
+		</property>
+		<property name="dbStatus" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`dbstatus`"/>
+		</property>
+		<property name="synergySession" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`synergysession`"/>
+		</property>
+	</class>
+	<class name="general.impl.CustomerImpl" entity-name="Customer" abstract="false" lazy="false" discriminator-value="Customer" table="`customer`">
+		<meta attribute="eclassName" inherit="false">Customer</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="CustomerId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`customerid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="customerdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="firstName" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`firstname`"/>
+		</property>
+		<property name="lastName" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`lastname`"/>
+		</property>
+		<property name="address" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`address`"/>
+		</property>
+		<property name="shippingAddress" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`shippingaddress`"/>
+		</property>
+		<property name="billingAddress" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`billingaddress`"/>
+		</property>
+		<property name="phone" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`phone`"/>
+		</property>
+		<property name="email" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`email`"/>
+		</property>
+	</class>
+	<class name="general.impl.OrderImpl" entity-name="Order" abstract="false" lazy="false" discriminator-value="Order" table="`order`">
+		<meta attribute="eclassName" inherit="false">Order</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="orderId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`orderid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="orderdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<many-to-one name="shipperId" entity-name="Shipper" lazy="false" foreign-key="order_shipperid" insert="true" update="true" not-null="false">
+			<column not-null="false" unique="false" name="`shipper_shipperid_shipperid`"/>
+		</many-to-one>
+		<many-to-one name="customerId" entity-name="Customer" lazy="false" foreign-key="order_customerid" insert="true" update="true" not-null="false">
+			<column not-null="false" unique="false" name="`customer_customerid_customerid`"/>
+		</many-to-one>
+		<property name="orderDate" lazy="false" insert="true" update="true" not-null="false" unique="false" type="timestamp">
+			<column not-null="false" unique="false" name="`orderdate`"/>
+		</property>
+		<property name="tax" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`tax`"/>
+		</property>
+		<property name="completed" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`completed`"/>
+		</property>
+		<property name="deleted" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`deleted`"/>
+		</property>
+		<property name="paid" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`paid`"/>
+		</property>
+		<property name="paymentDate" lazy="false" insert="true" update="true" not-null="false" unique="false" type="timestamp">
+			<column not-null="false" unique="false" name="`paymentdate`"/>
+		</property>
+		<property name="payType" lazy="false" not-null="false" insert="true" update="true" unique="false">
+			<column not-null="false" unique="false" name="`paytype`"/>
+			<type name="org.eclipse.emf.teneo.hibernate.mapping.ENumUserType">
+				<param name="enumClass">general.PaymentType</param>
+				<param name="eclassifier">PaymentType</param>
+				<param name="epackage">http://general/1.0</param>
+			</type>
+		</property>
+		<many-to-one name="salesPerson" entity-name="User" lazy="false" foreign-key="order_salesperson" insert="true" update="true" not-null="true">
+			<column not-null="true" unique="false" name="`user_salesperson_userid`"/>
+		</many-to-one>
+		<property name="onHold" lazy="false" insert="true" update="true" not-null="false" unique="false" type="boolean">
+			<column not-null="false" unique="false" name="`onhold`"/>
+		</property>
+	</class>
+	<class name="general.impl.ShipperImpl" entity-name="Shipper" abstract="false" lazy="false" discriminator-value="Shipper" table="`shipper`">
+		<meta attribute="eclassName" inherit="false">Shipper</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="shipperId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`shipperid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="shipperdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="companyName" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`companyname`"/>
+		</property>
+		<property name="phone" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`phone`"/>
+		</property>
+	</class>
+	<class name="general.impl.PaymentImpl" entity-name="Payment" abstract="false" lazy="false" discriminator-value="Payment" table="`payment`">
+		<meta attribute="eclassName" inherit="false">Payment</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="paymentId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`paymentid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="paymentdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="paymentType" lazy="false" not-null="false" insert="true" update="true" unique="false">
+			<column not-null="false" unique="false" name="`paymenttype`"/>
+			<type name="org.eclipse.emf.teneo.hibernate.mapping.ENumUserType">
+				<param name="enumClass">general.PaymentType</param>
+				<param name="eclassifier">PaymentType</param>
+				<param name="epackage">http://general/1.0</param>
+			</type>
+		</property>
+	</class>
+	<class name="general.impl.OrderDetailsImpl" entity-name="OrderDetails" abstract="false" lazy="false" discriminator-value="OrderDetails" table="`orderdetails`">
+		<meta attribute="eclassName" inherit="false">OrderDetails</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="orderDetailId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`orderdetailid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="orderdetailsdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<many-to-one name="orderId" entity-name="Order" lazy="false" foreign-key="orderdetails_orderid" insert="true" update="true" not-null="true">
+			<column not-null="true" unique="false" name="`order_orderid_orderid`"/>
+		</many-to-one>
+		<many-to-one name="productId" entity-name="Product" lazy="false" foreign-key="orderdetails_productid" insert="true" update="true" not-null="true">
+			<column not-null="true" unique="false" name="`product_productid_productid`"/>
+		</many-to-one>
+		<property name="price" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`price`"/>
+		</property>
+		<property name="Quantity" lazy="false" insert="true" update="true" not-null="false" unique="false" type="int">
+			<column not-null="false" unique="false" name="`quantity`"/>
+		</property>
+		<property name="Discount" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`discount`"/>
+		</property>
+		<property name="Total" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`total`"/>
+		</property>
+		<property name="size" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`size`"/>
+		</property>
+		<property name="color" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`color`"/>
+		</property>
+	</class>
+	<class name="general.impl.ProductImpl" entity-name="Product" abstract="false" lazy="false" discriminator-value="Product" table="`product`">
+		<meta attribute="eclassName" inherit="false">Product</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="productId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`productid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="productdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="SKU" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`sku`"/>
+		</property>
+		<many-to-one name="supplierId" entity-name="Supplier" lazy="false" foreign-key="product_supplierid" insert="true" update="true" not-null="false">
+			<column not-null="false" unique="false" name="`supplier_supplierid_supplierid`"/>
+		</many-to-one>
+		<many-to-one name="catergoryId" entity-name="Category" lazy="false" foreign-key="product_catergoryid" insert="true" update="true" not-null="true">
+			<column not-null="true" unique="false" name="`category_catergoryid_categoryid`"/>
+		</many-to-one>
+		<property name="productName" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`productname`"/>
+		</property>
+		<property name="productDescription" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`productdescription`"/>
+		</property>
+		<property name="QuantityPerUnit" lazy="false" insert="true" update="true" not-null="true" unique="false" type="int">
+			<column not-null="true" unique="false" name="`quantityperunit`"/>
+		</property>
+		<property name="unitPrice" lazy="false" insert="true" update="true" not-null="true" unique="false" type="double">
+			<column not-null="true" unique="false" name="`unitprice`"/>
+		</property>
+		<property name="size" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`size`"/>
+		</property>
+		<property name="color" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`color`"/>
+		</property>
+		<property name="discount" lazy="false" insert="true" update="true" not-null="false" unique="false" type="double">
+			<column not-null="false" unique="false" name="`discount`"/>
+		</property>
+		<property name="UnitsInStock" lazy="false" insert="true" update="true" not-null="true" unique="false" type="int">
+			<column not-null="true" unique="false" name="`unitsinstock`"/>
+		</property>
+	</class>
+	<class name="general.impl.SupplierImpl" entity-name="Supplier" abstract="false" lazy="false" discriminator-value="Supplier" table="`supplier`">
+		<meta attribute="eclassName" inherit="false">Supplier</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="supplierId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`supplierid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="supplierdtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="companyName" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`companyname`"/>
+		</property>
+		<property name="address" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`address`"/>
+		</property>
+		<property name="phone" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`phone`"/>
+		</property>
+		<property name="email" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`email`"/>
+		</property>
+	</class>
+	<class name="general.impl.CategoryImpl" entity-name="Category" abstract="false" lazy="false" discriminator-value="Category" table="`category`">
+		<meta attribute="eclassName" inherit="false">Category</meta>
+		<meta attribute="epackage" inherit="false">http://general/1.0</meta>
+		<id name="categoryId" type="java.lang.String">
+			<column not-null="true" unique="false" name="`categoryid`" length="36"/>
+			<generator class="uuid2"/>
+		</id>
+		<discriminator type="string">
+			<column name="`dtype`" index="categorydtype" length="255" not-null="true"/>
+		</discriminator>
+		<version name="e_version" column="e_version" access="org.eclipse.emf.teneo.hibernate.mapping.property.VersionPropertyHandler">
+			<meta attribute="syntheticVersion" inherit="false">true</meta>
+		</version>
+		<property name="categoryName" lazy="false" insert="true" update="true" not-null="true" unique="false" type="java.lang.String">
+			<column not-null="true" unique="false" name="`categoryname`"/>
+		</property>
+		<property name="description" lazy="false" insert="true" update="true" not-null="false" unique="false" type="java.lang.String">
+			<column not-null="false" unique="false" name="`description`"/>
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,80 @@
+<mockup version="1.0" skin="sketch" measuredW="1340" measuredH="740" mockupW="1280" mockupH="720">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="20" w="1280" h="720" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="75" y="35" w="-1" h="-1" measuredW="115" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Available%20Container</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::ComboBox" x="75" y="56" w="236" h="-1" measuredW="114" measuredH="62" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Project%20XYZ%201%0AProject%20XYZ%202%0AProject%20XYZ%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="75" y="175" w="-1" h="-1" measuredW="120" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Available%20Snapshots</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::List" x="75" y="196" w="236" h="170" measuredW="100" measuredH="170" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%201%20DATETIME%20Comment%0ASnapshot%202%20DATETIME%20Comment%0ASnapshot%203%20DATETIME%20Comment%0ASnapshot%204%20DATETIME%20Comment%0ASnapshot%205%20DATETIME%20Comment%0ASnapshot%206%20DATETIME%20Comment%0ASnapshot%207%20DATETIME%20Comment%0ASnapshot%208%20DATETIME%20Comment</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="295" y="197" w="-1" h="167" measuredW="16" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <value>0</value>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="75" y="133" w="-1" h="-1" measuredW="66" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>40463</color>
+        <text>Create</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="163" y="132" w="59" h="27" measuredW="60" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16750848</color>
+        <text>Modify</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="248" y="132" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="346" y="35" w="979" h="331" measuredW="100" measuredH="70" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="361" y="52" w="234" h="19" measuredW="234" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Modify%20Container%20and%20Connection%20Section</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::IconLabel" x="75" y="551" w="-1" h="-1" measuredW="67" measuredH="69" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::IconLabel" x="248" y="550" w="81" h="-1" measuredW="70" measuredH="69" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="154" y="620" w="-1" h="-1" measuredW="77" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>40463</color>
+        <text>Compare</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="75" y="381" w="236" h="27" measuredW="163" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>View%20Selected%20Snapshot</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::StickyNote" x="511" y="175" w="288" h="102" measuredW="109" measuredH="123" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Container%20are%20an%20instance%20above%20a%20project.%20%0ASome%20projects%20have%20multible%20versions%20but%20still%20have%20to%20be%20mergeable.%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

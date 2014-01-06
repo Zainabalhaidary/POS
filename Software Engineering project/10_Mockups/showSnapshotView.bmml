@@ -1,0 +1,36 @@
+<mockup version="1.0" skin="sketch" measuredW="1340" measuredH="740" mockupW="1280" mockupH="720">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="20" w="1280" h="720" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::ComboBox" x="75" y="35" w="220" h="-1" measuredW="114" measuredH="62" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Project%20XYZ%201%0AProject%20XYZ%202%0AProject%20XYZ%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::ComboBox" x="74" y="105" w="-1" h="-1" measuredW="221" measuredH="143" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%201%20DATETIME%20Comment%0ASnapshot%202%20DATETIME%20Comment%0ASnapshot%203%20DATETIME%20Comment%0ASnapshot%204%20DATETIME%20Comment%0ASnapshot%205%20DATETIME%20Comment%0ASnapshot%206%20DATETIME%20Comment%0ASnapshot%207%20DATETIME%20Comment%0ASnapshot%208%20DATETIME%20Comment</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Tree" x="310" y="35" w="1015" h="690" measuredW="300" measuredH="267" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F%20/Playground/regensburg/project.pj%0Af%20/Playground/regensburg/EA_CM/project.pj%0Af%20/Playground/regensburg/Example/project.pj%0AF%20/Playground/regensburg/RandomTest/project.pj%0A%09%5B%5D%20file.h%0A%09%5B%5D%20test.txt%0A%09%5B%5D%20main.c%0A%5B%5D%20and%20this%0A%5B%5D%20SDD.doc%0A%5B%5D%20testing.dll%0A%5B%5D%20test.txt</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="75" y="263" w="220" h="27" measuredW="116" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>40463</color>
+        <text>Open%20on%20Server</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::List" x="75" y="305" w="220" h="420" measuredW="100" measuredH="128" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%20Meta%20Information%0AContainer%3A%20XYZ%0AProject%3A%20XYZ%0ACreated%3A%2001.01.12%0AOwner%3A%20uiu1448%0AComment%3A%20-</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="137" y="461" w="259" h="107" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Meta%20Information%20from%20Snapshot%20displayed%20here%20beside%20the%20content%20of%20the%20version%20management%20system</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,82 @@
+<mockup version="1.0" skin="sketch" measuredW="1340" measuredH="740" mockupW="1280" mockupH="720">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="60" y="20" w="1280" h="720" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::ComboBox" x="75" y="35" w="220" h="-1" measuredW="114" measuredH="62" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Project%20XYZ%201%0AProject%20XYZ%202%0AProject%20XYZ%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::ComboBox" x="74" y="105" w="-1" h="-1" measuredW="221" measuredH="143" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Snapshot%201%20DATETIME%20Comment%0ASnapshot%202%20DATETIME%20Comment%0ASnapshot%203%20DATETIME%20Comment%0ASnapshot%204%20DATETIME%20Comment%0ASnapshot%205%20DATETIME%20Comment%0ASnapshot%206%20DATETIME%20Comment%0ASnapshot%207%20DATETIME%20Comment%0ASnapshot%208%20DATETIME%20Comment</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::ComboBox" x="75" y="356" w="220" h="-1" measuredW="87" measuredH="110" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Function%201%0AFunction%202%0AFunction%203%0AFunction%204%0AFunction%205%0AFunction%206</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::DataGrid" x="310" y="35" w="1015" h="644" measuredW="875" measuredH="325" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%2C%20File%2C%20Req.%2C%20Up%20To%20Date%2C%20Reviewed/Released%2C%20Config%20Management%2C%20Rating/Check%20result%2C%20Comments%0AGeneric%20Function%20SRS%2C%2C%5Bx%5D%2Cx%2Cn/a%2Cx%2Cx%0ASDD%2CSDD_docx%2C%5Bx%5D%2Cn/a%2Cn/a%2Cn/a%2C%2C%20To%20Do%20by%20DAG%0AMisra%3A%20Lint/CodeCheck%2C%2C%5Bx%5D%2Ci%2Cn/a%2Ci%2Ci%0AModelReview%2C%2C%5Bx%5D%0ASW%20Unit%20Test%20Spec%2C%2C%5Bx%5D%0ASW%20Integration%20Test%20Spec%2C%2C%5Bx%5D%0ASW%20Req.%20Test%20Spec%2C%2C%5B%5D%0ASW%20Integration%20Test%20Report%2C%2C%5Bx%5D%0ASW%20Req.%20Test%20Report%2C%2C%5B%5D%0ASW%20Unit%20Test%20Report%2C%2C%5B%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::ComboBox" x="75" y="263" w="217" h="-1" measuredW="164" measuredH="78" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>G30%20-%20Order%20Received%0AG40%20SW%20Concept%20Approved%0AA-Sample%0A...</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="1162" y="694" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="1078" y="694" w="-1" h="-1" measuredW="55" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <text>Clear</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="1254" y="693" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>3700253</color>
+        <text>Save</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="943" y="693" w="-1" h="-1" measuredW="111" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <text>Export%20to%20Excel</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::StickyNote" x="677" y="406" w="266" h="140" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20value%20saved%20in%20the%20previous%20snapshot%20will%20be%20displayed%20here.%0A%20%0AIf%20the%20file%20version%20is%20later%20than%20befor%20or%20did%20not%20exist%20yet%20it%20will%20be%20visualized</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::FieldSet" x="75" y="481" w="220" h="198" measuredW="200" measuredH="170" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Legend</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="87" y="496" w="196" h="27" measuredW="86" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>40463</color>
+        <text>No%20Change</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Button" x="88" y="533" w="195" h="27" measuredW="118" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16750848</color>
+        <text>New%20File%20Version</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="87" y="573" w="196" h="27" measuredW="158" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <text>No%20previous%20Information</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
